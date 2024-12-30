@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    background: white;
+}
+
+/* Header */
+
+.headerlogo {
+    width: 30%;
+    float: left;
+    padding-left: 20px;
+}
+
+.header {
+    padding: 30px;
+    width: 70%;
+    text-align: center;
+    background: white;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+/* Nav */
+
+.nav {
+    background-color: brown;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgb(86, 4, 4);
+    color: white;
+}
+
+/* Main */
+.main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nadpis {
+    color: red;
+    font-size: 30px;
+    text-shadow: 1px -1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.obrnadpis {
+    color: red;
+    font-size: 55px;
+    text-shadow: 1px -1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.normaltext {
+    color: black;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* Left sidebar */
+
+.left {
+    width: 75%;
+    float: left;
+}
+
+.obrazek {
+    padding: 25px;
+}
+
+.fakeObrazek {
+    background-color: gray;
+    width: 100%;
+    padding: 25px;
+}
+
+/* Ceník table */
+
+.tabulka {
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:nth-child(2n) {
+    background-color: gainsboro;
+}
+
+tr:hover:not(:first-child) {
+    background-color: gray;
+    color: white;
+}
+
+td,
+th {
+    padding: 6px;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* Right sidebar */
+
+.right {
+    width: 25%;
+    float: left;
+    padding-left: 20px;
+}
+
+/* Cards */
+
+.card {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Footer */
+
+.footer {
+    background: brown;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+}
+
+/* Responsive exceptions */
+
+@media screen and (max-width: 550px) {
+    .nav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .left,
+    .right {
+        width: 100%;
+        padding: 0;
+    }
+}
